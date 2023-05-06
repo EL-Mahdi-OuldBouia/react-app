@@ -1,0 +1,141 @@
+section {
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #171716;
+  /* max-width: 350px; */
+}
+h1 {
+  color: #6ab04c;
+  border-bottom: 3px solid grey;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-end-end-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form label {
+  align-self: flex-start;
+  color: #7edede;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+form input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border: 2px solid #6ab04c;
+  animation-name: focusAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes focusAnimation {
+  0% {
+    border-color: #c68a36;
+  }
+  50% {
+    border-color: #b4d4a5;
+  }
+  100% {
+    border-color: #81dcd8;
+  }
+}
+
+form input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+section label {
+  display: flex;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.offscreen {
+  display: none;
+}
+
+button {
+  display: inline-block;
+  background-color: #6ab04c;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7cc260;
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  background-color: #569437;
+  transform: translateY(0px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+form .instructions {
+  width: 290px;
+}
+
+form p {
+  color: #fff;
+  width: 290px;
+  border: 2px solid red;
+  padding: 3px;
+  border-radius: 7px;
+  background-color: brown;
+}
+
+#times,
+#check {
+  font-size: 1.34rem;
+  margin-left: 4px;
+}
+
+#times {
+  color: red;
+}
+#check {
+  color: rgb(142, 227, 142);
+}

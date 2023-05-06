@@ -1,0 +1,125 @@
+.post {
+  flex: 2;
+}
+
+.one-post {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  background-color: rgba(243, 247, 250, 0.833);
+  border-radius: 12px;
+}
+.one-post .profile-username-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.one-post .profile-username-dots .profile-username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 18px;
+}
+
+.one-post .profile-username-dots .profile-username #profile-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  position: relative;
+  bottom: -12px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, rgb(255, 247, 0), rgb(54, 141, 132));
+  background: linear-gradient(to right, rgb(201, 103, 12), rgb(84, 169, 135));
+}
+.one-post .profile-username-dots .profile-username .username {
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+  bottom: -8px;
+}
+
+.one-post #post-img {
+  width: 95%;
+  height: calc(100vh / 4 + 50px);
+  object-fit: cover;
+  align-self: center;
+  border-radius: 6px;
+}
+
+.one-post p {
+  font-size: 0.86rem;
+  margin-left: 3px;
+}
+
+.one-post .img-comment-like-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.one-post .img-comment-like-share .img-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.one-post .img-comment-like-share img {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  margin-left: 3px;
+}
+
+.one-post .icon {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.one-post .icon:hover {
+  filter: brightness(1.51);
+  transform: scale(0.98);
+}
+
+.one-post .heart {
+  /* color: red; */
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  color: rgba(228, 228, 228, 0.782);
+}
+
+.one-post .message {
+  /* color: red; */
+  background-color: rgb(74, 180, 174);
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  color: rgba(228, 228, 228, 0.782);
+}
+
+.one-post .share {
+  /* color: red; */
+  background-color: rgba(21, 29, 18, 0.8);
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  color: rgba(228, 228, 228, 0.782);
+  margin-right: 5px;
+}
+
+.one-post .three-dots {
+  /* color: red; */
+  background-color: rgba(21, 29, 18, 0.8);
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  color: rgba(228, 228, 228, 0.782);
+  margin-right: 5px;
+}

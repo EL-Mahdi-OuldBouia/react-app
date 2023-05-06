@@ -1,0 +1,306 @@
+.group-messaging {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  background-color: aliceblue;
+}
+
+.group-messaging .group-conversation {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f8f8f8f3;
+  width: 100%;
+  min-height: 73.3%;
+  max-height: 73.3%;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group-messaging .group-conversation .one-msg {
+  /* align-self: flex-end; */
+  color: rgb(108, 106, 106);
+  /* margin-left: auto; */
+  min-width: 60%;
+  max-width: 60%;
+  height: fit-content;
+  margin-bottom: 7px;
+  display: inline;
+  height: auto;
+}
+
+.group-messaging .group-conversation .one-msg-right {
+  color: rgb(108, 106, 106);
+  margin-left: auto;
+  min-width: 60%;
+  max-width: 60%;
+  /* height: fit-content; */
+  margin-bottom: 7px;
+  display: inline;
+  height: auto;
+}
+
+.group-messaging .group-conversation .one-msg .name-pic {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.group-messaging .group-conversation .one-msg-right .name-pic {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.group-messaging .group-conversation .one-msg .name-pic h6 {
+  margin-left: 4px;
+  text-transform: capitalize;
+}
+
+.group-messaging .group-conversation .one-msg-right .name-pic h6 {
+  margin-left: 4px;
+  text-transform: capitalize;
+  margin-right: 3px;
+}
+
+.group-messaging .group-conversation .one-msg img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.group-messaging .group-conversation .one-msg-right img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.group-messaging .group-conversation .one-msg .msg-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0084ffb3;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.927);
+  padding-left: 3px;
+  word-wrap: break-word;
+}
+
+.group-messaging .group-conversation .one-msg-right .msg-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #6ee8a3b3;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.927);
+  padding-left: 3px;
+  word-wrap: break-word;
+}
+
+.group-messaging .group-conversation .one-msg .msg-container::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: -6px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(135deg);
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #0084ffb3;
+  border-right: 15px solid transparent;
+}
+
+.group-messaging .group-conversation .one-msg-right .msg-container::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: -6px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(135deg);
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #6ee8a3b3;
+  border-right: 15px solid transparent;
+}
+
+.group-messaging .group-conversation .one-msg .msg {
+  font-size: 0.8rem;
+}
+
+.group-messaging .group-conversation .one-msg-right .msg {
+  font-size: 0.8rem;
+}
+
+.group-messaging .group-conversation .one-msg .msg-date {
+  font-size: 0.58rem;
+}
+
+.group-messaging .group-conversation .one-msg-right .msg-date {
+  font-size: 0.49rem;
+  font-weight: 600;
+}
+
+.group-messaging .writing-file-sharing {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.group-messaging .writing-file-sharing textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-top: 1px solid black;
+  margin-bottom: -5px;
+  padding-bottom: 2px;
+}
+
+.group-messaging .writing-file-sharing .attach-voice-emoji-send {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.group-messaging .writing-file-sharing .attach-voice-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-left: 3px;
+}
+
+.group-messaging .writing-file-sharing button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px;
+  border: 1px solid #3f51b5;
+  border-radius: 4px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.group-messaging .writing-file-sharing button:hover {
+  background-color: #303f9f;
+  border-color: #303f9f;
+  transform: translate(0);
+}
+
+.group-messaging .writing-file-sharing button:active {
+  background-color: #303f9f;
+  border-color: #303f9f;
+  transform: scale(0.99);
+}
+
+.writing-file-sharing .icon {
+  cursor: pointer;
+  color: #181a1dde;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(68, 131, 131, 0.415);
+  font-size: 1.5rem;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.writing-file-sharing .icon:hover {
+  color: #969696;
+  background-color: rgba(90, 173, 173, 0.415);
+}
+
+.attach-voice-emoji .emoji-icon {
+  margin-left: 3px;
+}
+
+
+
+/* Styling the audio controls */
+
+.group-messaging .group-conversation .right {
+  margin-left: auto;
+
+  margin-bottom: 7px;
+}
+
+audio {
+  display: block;
+  width: 60%;
+  margin: 10px 0;
+}
+
+/* Styling the play button */
+audio::-webkit-media-controls-play-button {
+  background-color: #f60;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:before {
+  content: "\25B6";
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Styling the volume controls */
+audio::-webkit-media-controls-volume-slider {
+  width: 60%;
+  height: 5px;
+  background-color: #ccc;
+}
+
+ audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+  background-color: #f60;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  margin-top: -5px;
+} 
+
+/* Styling the progress bar */
+ audio::-webkit-media-controls-timeline {
+  height: 5px;
+  background-color: #ccc;
+} 
+
+audio::-webkit-media-controls-timeline::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline::-webkit-media-controls-seek-back-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline::-webkit-media-controls-seek-forward-button {
+  display: none;
+} 
+
+audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
+  background-color: #f60;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+

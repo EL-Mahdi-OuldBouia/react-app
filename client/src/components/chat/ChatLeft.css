@@ -1,0 +1,118 @@
+.chat-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+
+.chat-left h1 {
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.chat-left .friend-conversation-detailed {
+  display: flex;
+  align-items: flex-start;
+
+  justify-content: space-around;
+  width: 300px;
+  max-height: 63vh;
+  background-color: rgb(36, 221, 101);
+  overflow-y: auto;
+  margin-right: 10px;
+  transition: all 0.4s ease-in;
+}
+
+.chat-left img {
+  cursor: pointer;
+}
+
+.chat-left .friend-conversation-detailed img {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 4px;
+}
+
+.chat-left .friend-conversation-detailed .username-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.55rem;
+  font-weight: 700;
+  gap: 3px;
+}
+
+.chat-left .friend-conversation-detailed .last-message-sender {
+  font-weight: 700;
+  font-size: 0.65rem;
+  margin-right: 3px;
+  margin-left: -5px;
+}
+
+.chat-left .friend-conversation-detailed .last-msg {
+  margin-right: 3px;
+}
+
+.chat-left .friend-conversation-detailed .date-last-msg {
+  font-weight: 700;
+  font-size: 0.5rem;
+}
+
+/*  */
+.chat-left .friends {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  max-height: 63vh;
+  overflow-y: auto;
+  background-color: rgb(211, 161, 117);
+  width: 55px;
+  transition: all 0.2s ease-in;
+}
+
+.chat-left .friends img {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 4px;
+}
+
+.chat-left .friends .username-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.55rem;
+  font-weight: 700;
+  gap: 3px;
+}
+
+.chat-left .icon-r {
+  background-color: blueviolet;
+  width: 55px;
+  height: 28px;
+  place-self: start;
+  cursor: pointer;
+}
+
+.chat-left .icon-l {
+  background-color: blueviolet;
+  width: 55px;
+  height: 28px;
+  cursor: pointer;
+  /* place-self: start; */
+}
+
+.chat-left .icon {
+  transition: all 0.1s ease;
+}
+
+.chat-left .icon:hover {
+  filter: brightness(1.2);
+}

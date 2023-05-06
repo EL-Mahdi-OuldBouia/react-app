@@ -1,0 +1,271 @@
+nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: rgb(112, 215, 181);
+  position: relative;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 7px;
+}
+
+nav img {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: aquamarine;
+}
+
+nav .logo .username {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+nav .chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #b5cfed;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+}
+
+nav .chat:hover {
+  filter: brightness(1.1);
+}
+
+nav #drop-icon {
+  color: #502761;
+  cursor: pointer;
+}
+
+nav #drop-icon:hover {
+  transform: scale(0.97);
+}
+
+nav .drop-menu {
+  width: 180px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #fafafa;
+  border: 1px solid blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  bottom: -180px;
+  left: 50px;
+  animation-name: nav-animation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+nav .drop-menu li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+nav .drop-menu li {
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+nav .drop-menu li:hover {
+  background-color: #95879b;
+}
+nav .group-chat {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 0.8rem;
+}
+nav .drop-menu-hide {
+  display: none;
+}
+
+nav #notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #528ac6df;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  position: relative;
+}
+
+nav #notification:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+nav #not-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+nav #not-container span {
+  position: absolute;
+  right: -1px;
+  top: -12px;
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: #e33939;
+}
+
+nav #not-container .notification-div {
+  position: absolute;
+
+  top: 8vh;
+  background-color: #2c2929;
+  max-width: 400px;
+  overflow-y: auto;
+  width: 250px;
+  padding-bottom: 5px;
+  z-index: 3;
+}
+
+nav #not-container .notification-div .one-notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #fafafa;
+  padding-bottom: 2px;
+}
+
+nav #not-container .notification-div .one-notification p {
+  font-size: small;
+}
+
+nav #not-container .not-h1 {
+  font-size: 1rem;
+  color: #b5cfed;
+}
+
+nav #not-container .friendshipReq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav #not-container .friendshipReq .acc-dec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+nav #not-container .friendshipReq .acc-dec button {
+  font-size: 0.7rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+
+nav #not-container .friendshipReq .acc-dec .dec-invitation {
+  background-color: rgb(148, 55, 55);
+}
+
+nav #not-container .friendshipReq .acc-dec .acc-invitation {
+  background-color: #2e9147;
+}
+
+nav #not-container .friendshipReq .acc-dec button:hover {
+  filter: brightness(1.2);
+}
+
+.friendshipReq p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.friendshipReq p h3 {
+  font-size: 0.8rem;
+}
+
+.one-notification .username {
+  font-weight: 700;
+}
+
+nav input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+nav .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+nav button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d;
+}
+
+nav .button--secondary:hover {
+  background-color: #7bb4df;
+}
+
+nav button[type="submit"] svg {
+  color: #fff;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b5cfed;
+}
+nav a:visited {
+  color: rgb(33, 39, 45);
+}
+
+@keyframes nav-animation {
+  0% {
+    height: 0;
+  }
+  50% {
+    display: flex;
+    height: 120px;
+  }
+  100% {
+    height: 180px;
+  }
+}

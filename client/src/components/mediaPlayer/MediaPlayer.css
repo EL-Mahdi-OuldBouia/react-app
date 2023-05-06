@@ -1,0 +1,9 @@
+.media-player {
+  max-width: 320px;
+  max-height: 200px;
+  align-self: start;
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.98);
+  object-fit: cover;
+}

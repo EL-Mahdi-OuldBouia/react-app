@@ -1,0 +1,174 @@
+.right-feed {
+  /* background-color: green; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-feed .cover-profile-username-title-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-feed .cover-profile-username-title-about #cover-img {
+  width: 85%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  /* height:; */
+}
+
+.right-feed .cover-profile-username-title-about .profile-username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-feed .cover-profile-username-title-about .profile-username img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 2px solid;
+  border-image: linear-gradient(
+    to right,
+    rgb(255, 247, 0),
+    rgba(247, 133, 67, 0.662)
+  );
+  background: linear-gradient(to right, rgb(201, 103, 12), rgb(147, 39, 186));
+  position: relative;
+  top: -14px;
+  object-fit: cover;
+}
+
+.right-feed
+  .cover-profile-username-title-about
+  .profile-username
+  .username-title {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.right-feed
+  .cover-profile-username-title-about
+  .profile-username
+  .username-title
+  .username {
+  font-weight: 600;
+  border-bottom: 2px solid rgb(208, 126, 126);
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  /* display: inline; */
+  margin-left: 2px;
+}
+
+.right-feed
+  .cover-profile-username-title-about
+  .profile-username
+  .username-title
+  .title {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.778);
+  margin-top: 3px;
+}
+
+.right-feed .cover-profile-username-title-about .dev-icon {
+  font-size: 1.1rem;
+  color: aliceblue;
+  background-color: rgba(21, 109, 136, 0.855);
+  margin-left: 4px;
+  border-radius: 3px;
+}
+
+.right-feed .cover-profile-username-title-about .about-you {
+  font-size: 0.8rem;
+  width: 94%;
+  margin-bottom: 5px;
+}
+
+.right-feed .cover-profile-username-title-about .about-you h4 {
+  color: rgba(233, 138, 103, 0.812);
+}
+
+.right-feed .cover-profile-username-title-about .about-you p {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 3px;
+}
+
+.right-feed .share-express textarea {
+  resize: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: none;
+  outline: none;
+}
+
+.right-feed .share-video-image-goLive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 96%;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 6px;
+}
+
+.right-feed .share-video-image-goLive .image-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.right-feed .share-video-image-goLive .image-video .share-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 0.85rem;
+}
+
+.right-feed .share-video-image-goLive .image-video .share-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 0.8rem;
+}
+
+.right-feed .share-video-image-goLive .image-video .icon-image {
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgba(5, 97, 25, 0.768);
+}
+
+.right-feed .share-video-image-goLive .image-video .icon-video {
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgba(111, 15, 6, 0.984);
+}
+
+.right-feed .share-video-image-goLive .go-live .icon-live {
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgba(191, 117, 48, 0.984);
+}
+
+.right-feed .icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.right-feed .icon:hover {
+  transform: scale(0.98);
+  filter: brightness(1.3);
+}

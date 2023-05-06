@@ -1,0 +1,32 @@
+.login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login h1 {
+  text-align: center;
+  width: 150px;
+}
+
+.password span {
+  position: relative;
+}
+
+.login .visible {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  font-size: 21px;
+  color: green;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.logged-in {
+  background-color: rgb(141, 245, 38);
+  border: rgb(141, 245, 38);
+}

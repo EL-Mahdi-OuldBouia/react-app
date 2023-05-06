@@ -1,0 +1,34 @@
+.feed {
+  width: 100vw;
+  height: calc(100vh - 45px);
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.feed .stories-posts {
+  background-color: rgb(230, 230, 232);
+  flex: 2;
+  max-width: calc(100vw / 2- 500px);
+  min-height: calc(100vw / 2 - 500px);
+  overflow-y: auto;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feed .stories-posts .stories {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(243, 247, 250, 0.833);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 12px;
+  /* background-color: red; */
+  width: 94%;
+}

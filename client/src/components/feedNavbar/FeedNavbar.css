@@ -1,0 +1,134 @@
+.feed-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  height: 45px;
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  z-index: 10;
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.search-container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: inline; */
+  flex: 1;
+  width: 200px;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: 35px;
+}
+
+.fa-search {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.feed-navbar .name-home {
+  font-weight: 800;
+  font-size: 0.93rem;
+  margin-left: 10px;
+  border-radius: 7px;
+  padding-left: 6px;
+  padding-right: 5px;
+  box-shadow: rgba(182, 140, 67, 0.4) 0px 0px 0px 2px,
+    rgba(167, 175, 125, 0.65) 0px 4px 6px -1px,
+    rgba(210, 105, 56, 0.08) 0px 1px 0px inset;
+}
+
+.feed-navbar .name-home .app-name > span {
+  color: orange;
+  font-size: 1rem;
+}
+
+.feed-navbar .friendshipRequests-chats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.feed-navbar .bell-img-username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.feed-navbar .bell-img-username .bell-icon {
+  font-size: 1.1rem;
+  width: 15px;
+  border-radius: 3px;
+}
+
+.feed-navbar .bell-img-username .img-username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.feed-navbar .bell-img-username img {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+}
+
+.feed-navbar .bell-img-username .img-username .username {
+  font-size: 0.82rem;
+  border-bottom: 2px solid rgb(206, 128, 100);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: center;
+}
+
+.feed-navbar .icon {
+  cursor: pointer;
+  background-color: rgb(139, 129, 126);
+  filter: brightness(1.3);
+  border-radius: 3px;
+  transform: scale(1.2);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  color: rgba(22, 20, 20, 0.632);
+}
+
+.feed-navbar .icon:hover {
+  filter: brightness(1.51);
+  transform: scale(1.189);
+}
+
+.feed-navbar .icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(20, 19, 19);
+  z-index: 2;
+}

@@ -1,0 +1,44 @@
+.audio-recorder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.audio-recorder .text-messages {
+  height: 300px;
+  background-color: #fafafa;
+  width: 350px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+audio {
+  display: block;
+  width: 60%;
+  max-width: 500px;
+  height: 35px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #114d4dd7;
+  border: 1px solid #6d6767;
+  border-radius: 5px;
+}
+
+.audio-recorder .icon {
+  font-size: 1.2rem;
+  color: rgba(27, 30, 30, 0.827);
+  background-color: rgb(239, 237, 234);
+  border-radius: 3px;
+  margin-top: 2px;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+.audio-recorder .icon:hover {
+  color: rgba(65, 71, 71, 0.827);
+
+  filter: brightness(1.1);
+  transform: scale(0.98);
+}

@@ -1,0 +1,11 @@
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* place-content: center; */
+  transition: all 0.2s ease-in-out;
+}

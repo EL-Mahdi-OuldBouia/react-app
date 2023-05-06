@@ -1,0 +1,27 @@
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1px;
+  align-self: self-end;
+  background-color: #57c5b6;
+}
+
+footer img {
+  width: 44px;
+  height: 44px;
+  background-color: black;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+footer .social-media-links {
+  margin-left: 15px;
+}
+footer .so-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
